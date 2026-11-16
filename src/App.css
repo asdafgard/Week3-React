@@ -1,0 +1,77 @@
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  background-color: #1a1a24;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 35px;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.character-card {
+  background-color: #252535;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #9cffcc;
+}
+
+.character-card h2 {
+  font-size: 22px;
+  margin: 15px 0 5px;
+}
+
+.character-card p {
+  color: #bbbbcc;
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .character-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.character-card h2 {
+  font-size: 22px;
+  margin: 15px 0 3px;
+}
+
+.character-nickname {
+  font-size: 16px;
+  font-weight: normal;
+  color: #9cffcc;
+  margin: 0 0 10px;
+}
+
+.character-card p {
+  color: #bbbbcc;
+  font-size: 15px;
+  margin: 0;
+}
